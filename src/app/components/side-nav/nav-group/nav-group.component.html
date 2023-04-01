@@ -1,0 +1,17 @@
+<div class="nav-group">
+  <p class="nav-group__divider" [style.fontSize.px]="fontSize">
+    {{ groupName }}
+  </p>
+  <div
+    class="nav-group__button-div"
+    *ngFor="let buttonContent of buttonsContent; index as i"
+  >
+    <app-nav-button
+      class="nav-group__button"
+      [content]="buttonContent"
+      [iconName]="'bi bi-' + buttonsIconsName[i]"
+      [impairedMode]="impairedMode"
+      [fontSize]="fontSize"
+    ></app-nav-button>
+  </div>
+</div>

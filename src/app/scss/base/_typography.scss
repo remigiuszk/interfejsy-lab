@@ -1,0 +1,27 @@
+@import "abstracts/mixins";
+
+.header {
+  @include textProperties(32px, black, 48px, 700);
+  &--white {
+    @include textProperties(32px, white, 48px, 700);
+  }
+}
+
+.header-small {
+  @include textProperties(26px, black, 32px, 500);
+  &--white {
+    @include textProperties(26px, white, 32px, 500);
+  }
+}
+
+.paragraph {
+  @include textProperties(16px, black, 21px, 300);
+
+  &--white {
+    @include textProperties(16px, white, 21px, 300);
+  }
+
+  &--subtle {
+    @include textProperties(16px, grey, 21px, 300);
+  }
+}

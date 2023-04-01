@@ -1,0 +1,9 @@
+<button
+  class="button"
+  [ngClass]="
+    impairedMode ? 'btn btn-warning' : 'btn btn-outline-secondary button'
+  "
+>
+  <i [class]="iconName"></i>
+  <div [style.fontSize.px]="fontSize">{{ content }}</div>
+</button>

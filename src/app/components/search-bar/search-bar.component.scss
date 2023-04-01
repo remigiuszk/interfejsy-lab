@@ -1,0 +1,18 @@
+@import "abstracts/mixins";
+
+.search-bar {
+  @include flexContainer(
+    $direction: row,
+    $gap: 1rem,
+    $justify-content: center,
+    $padding: 1rem
+  );
+
+  &__text-field {
+    width: 70%;
+  }
+
+  &__profile {
+    width: 3rem;
+  }
+}

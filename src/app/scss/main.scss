@@ -1,0 +1,9 @@
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+@import 'vendors/bootstrap';
+@import 'vendors/bootstrap-icons';
+
+@import 'base/typography';
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';

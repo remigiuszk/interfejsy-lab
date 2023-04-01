@@ -1,0 +1,11 @@
+@import "abstracts/mixins";
+
+.button {
+  @include flexContainer(
+    $direction: row,
+    $gap: 0.2rem,
+    $justify-content: flex-start
+  );
+  width: 100%;
+  padding: 0.5rem;
+}

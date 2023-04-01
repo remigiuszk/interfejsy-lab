@@ -1,0 +1,15 @@
+@import "abstracts/mixins";
+
+.content-card {
+  @include flexContainer(
+    $gap: 1rem,
+    $justify-content: flex-start,
+    $align-items: flex-start,
+    $wrap: wrap,
+    $padding: 1rem
+  );
+  
+  &__image {
+    margin: 1rem;
+  }
+}

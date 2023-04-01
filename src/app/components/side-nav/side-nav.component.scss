@@ -1,0 +1,23 @@
+@import "abstracts/mixins";
+
+.side-nav {
+  &__icon {
+    width: 19rem;
+  }
+
+  &__content {
+    @include flexContainer(
+      $direction: column,
+      $gap: 0.5rem,
+      $justify-content: flex-start,
+      $align-items: flex-start,
+      $padding: 0.5rem
+    );
+    height: 100%;
+    width: 100%;
+  }
+
+  &__nav-group {
+    width: 100%;
+  }
+}

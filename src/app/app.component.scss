@@ -1,0 +1,50 @@
+@import "abstracts/mixins";
+
+.app {
+  @include flexContainer(
+    $justify-content: flex-start,
+    $align-items: flex-start
+  );
+
+  width: 100%;
+
+  &__side-nav {
+    width: 15%;
+    height: 100%;
+  }
+
+  &__side-nav--impaired {
+    width: 15%;
+    height: 100%;
+    background-color: black;
+    color: yellow;
+  }
+
+  &__header {
+    @include flexContainer($gap: 1rem);
+    width: 100%;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  &__serach-bar {
+    width: 100%;
+  }
+
+  &__main {
+    width: 85%;
+    background-color: lightyellow;
+    height: 100%;
+  }
+
+  &__main--impaired {
+    width: 85%;
+    background-color: darkslategrey;
+    color: yellow;
+    height: 100%;
+  }
+
+  &__content {
+    height: 100%;
+  }
+}
