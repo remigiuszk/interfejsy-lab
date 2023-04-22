@@ -6,6 +6,9 @@
   }
 
   &__content {
+    height: 100%;
+    width: 100%;
+    
     @include flexContainer(
       $direction: column,
       $gap: 0.5rem,
@@ -13,8 +16,6 @@
       $align-items: flex-start,
       $padding: 0.5rem
     );
-    height: 100%;
-    width: 100%;
   }
 
   &__nav-group {

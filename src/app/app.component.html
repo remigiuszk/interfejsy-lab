@@ -1,11 +1,12 @@
 <div class="app">
   <app-side-nav
+    *ngIf="authService.isUserAuthorized"
     [impairedMode]="impairedMode"
     [fontSize]="fontSize"
     [ngClass]="impairedMode ? 'app__side-nav--impaired' : 'app__side--nav'"
   ></app-side-nav>
   <div [ngClass]="impairedMode ? 'app__main--impaired' : 'app__main'">
-    <div class="app__header">
+    <div *ngIf="authService.isUserAuthorized" class="app__header">
       <app-search-bar class="app__search-bar"></app-search-bar>
       <button (click)="increaseFontSize()" class="btn btn-default">
         <i class="bi bi-plus-square"></i>
@@ -18,14 +19,7 @@
         Change mode
       </button>
     </div>
-    <div class="app__content">
-      <app-content-card [imageSource]="'assets/img/1.png'"></app-content-card>
-      <app-content-card [imageSource]="'assets/img/2.png'"></app-content-card>
-      <app-content-card [imageSource]="'assets/img/3.png'"></app-content-card>
-      <app-content-card [imageSource]="'assets/img/4.png'"></app-content-card>
-      <app-content-card [imageSource]="'assets/img/5.png'"></app-content-card>
-      <app-content-card [imageSource]="'assets/img/6.png'"></app-content-card>
-      <app-content-card [imageSource]="'assets/img/7.png'"></app-content-card>
-    </div>
+    <router-outlet></router-outlet>
+    <app-chat *ngIf="authService.isUserAuthorized" class="app__chat"></app-chat>
   </div>
 </div>

@@ -1,0 +1,49 @@
+<div class="sign-in-form">
+  <img class="sign-in-form__banner" src="assets/img/logo.png" />
+  <div class="sign-in-form__card card card--shadow">
+    <div class="sign-in-form__body">
+      <h2 class="sign-in-form__title display-6">sign in</h2>
+      <form
+        class="sign-in-form__content"
+        [formGroup]="signInForm"
+        (ngSubmit)="onSubmit()"
+      >
+        <div
+          *ngIf="!authService.isUserAuthorized && formSubmited"
+          class="alert alert-danger"
+          role="alert"
+        >
+          Login failed, incorrect credentials.
+        </div>
+
+        <div class="form-label-group">
+          <input
+            placeholder="enter login"
+            type="text"
+            [formControl]="login"
+            class="form-control"
+          />
+        </div>
+
+        <div class="form-label-group">
+          <input
+            placeholder="enter password"
+            type="passowrd"
+            [formControl]="password"
+            class="form-control"
+          />
+        </div>
+
+        <div class="form-group">
+          <button
+            type="submit"
+            class="btn btn-primary sign-in-form__submit-button"
+            [disabled]="!signInForm.valid"
+          >
+            Sign In
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

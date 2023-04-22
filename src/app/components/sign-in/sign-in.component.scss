@@ -1,0 +1,28 @@
+@import 'abstracts/mixins';
+
+.sign-in-form {
+    @include flexContainer($direction: column);
+
+    &__banner {
+        width: 50%;
+        margin: 5rem 0 3rem;
+    }
+
+    &__card {
+        width: 20%;
+    }
+
+    &__title {
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    &__content {
+        padding: 0 2rem 2rem 2rem;
+    }
+
+    &__submit-button {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+}

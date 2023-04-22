@@ -7,9 +7,10 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class NavButtonComponent implements OnInit {
   @Input() content: string = '';
-  @Input() iconName: string ='';
+  @Input() iconName: string = '';
   @Input() impairedMode: boolean = false;
   @Input() fontSize: number = 14;
+  @Input() route: string = '/';
   constructor() {}
 
   ngOnInit() {}

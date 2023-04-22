@@ -32,7 +32,7 @@
   }
 
   &__main {
-    width: 85%;
+    width: 100%;
     background-color: lightyellow;
     height: 100%;
   }
@@ -46,5 +46,13 @@
 
   &__content {
     height: 100%;
+  }
+
+  &__chat {
+    position: fixed;
+    bottom: 70%;
+    right: 5rem;
+    width: 10em;
+    height: 3em;
   }
 }

@@ -1,0 +1,16 @@
+.chat {
+  &__dot {
+    height: 75px;
+    width: 75px;
+    background-color: #007c06;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  &__content {
+    height: 60vh;
+    width: 200px;
+    border-radius: 10%;
+    background-color: grey;
+  }
+}

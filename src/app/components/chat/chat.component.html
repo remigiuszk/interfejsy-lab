@@ -1,0 +1,12 @@
+<div class="chat">
+  <div *ngIf="chatHidden" class="chat__icon">
+    <button class="btn btn-default" (click)="chatHidden = !chatHidden">
+      <span class="chat__dot"></span>
+    </button>
+  </div>
+  <div *ngIf="!chatHidden" class="chat__content">
+    <button (click)="chatHidden = !chatHidden" class="btn btn-default">
+      X
+    </button>
+  </div>
+</div>

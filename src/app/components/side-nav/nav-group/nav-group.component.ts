@@ -9,6 +9,7 @@ export class NavGroupComponent {
   @Input() groupName: string = '';
   @Input() buttonsContent: string[] = [];
   @Input() buttonsIconsName: string[] = [];
+  @Input() buttonsRoutes: string[] = [];
   @Input() impairedMode: boolean = false;
   @Input() fontSize: number = 14;
 }
