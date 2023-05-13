@@ -3,7 +3,7 @@
     *ngIf="authService.isUserAuthorized"
     [impairedMode]="impairedMode"
     [fontSize]="fontSize"
-    [ngClass]="impairedMode ? 'app__side-nav--impaired' : 'app__side--nav'"
+    [ngClass]="impairedMode ? 'app__side-nav--impaired' : 'app__side-nav'"
   ></app-side-nav>
   <div [ngClass]="impairedMode ? 'app__main--impaired' : 'app__main'">
     <div *ngIf="authService.isUserAuthorized" class="app__header">
@@ -19,7 +19,7 @@
         Change mode
       </button>
     </div>
-    <router-outlet></router-outlet>
+    <router-outlet class="app__content"></router-outlet>
     <app-chat *ngIf="authService.isUserAuthorized" class="app__chat"></app-chat>
   </div>
 </div>

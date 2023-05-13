@@ -1,4 +1,4 @@
-<div class="sign-in-form">
+<div *ngIf="!authService.isUserAuthorized" class="sign-in-form">
   <img class="sign-in-form__banner" src="assets/img/logo.png" />
   <div class="sign-in-form__card card card--shadow">
     <div class="sign-in-form__body">
@@ -28,7 +28,7 @@
         <div class="form-label-group">
           <input
             placeholder="enter password"
-            type="passowrd"
+            type="password"
             [formControl]="password"
             class="form-control"
           />

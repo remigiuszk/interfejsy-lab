@@ -10,12 +10,12 @@
 
   &__side-nav {
     width: 15%;
-    height: 100%;
+    height: 120vh;
   }
 
   &__side-nav--impaired {
     width: 15%;
-    height: 100%;
+    height: 120vh;
     background-color: black;
     color: yellow;
   }
@@ -34,14 +34,14 @@
   &__main {
     width: 100%;
     background-color: lightyellow;
-    height: 100%;
+    height: 120vh;
   }
 
   &__main--impaired {
     width: 85%;
     background-color: darkslategrey;
     color: yellow;
-    height: 100%;
+    height: 120vh;
   }
 
   &__content {
